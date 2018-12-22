@@ -1,4 +1,6 @@
+#ip address of tap interface
 ip=$1
+#tap interface id
 id=$2
 
 echo "creating tap interface tap $ip"

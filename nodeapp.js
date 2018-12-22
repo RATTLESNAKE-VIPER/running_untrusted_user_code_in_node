@@ -10,15 +10,15 @@ app.listen(6447, ip, (err) => {
 });
 
 let opts = {
-    url: 'https://jsonplaceholder.typicode.com/todos/1'
+    url: 'https://www.quora.com/How-trustworthy-is-faircent-com'
 };
 
 app.get('/check', (req, res) => {
     console.log('GET: /check ');
     request(opts, (e, r, b) => {
         console.log(r.statusCode);
-        restart();
         res.status(200).send('ok');
+        restart();
     });
 });
 

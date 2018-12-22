@@ -1,3 +1,4 @@
+# tap ip address
 ip=$1
 
 while [ 1 ];                      # health check

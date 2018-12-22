@@ -1,4 +1,5 @@
-# create interface and start 1000 node   : sh main.sh 1000
+# create interface and start 1000 node   : 
+sh main.sh 1000
 
 pm2 start loadBalancer.js -i 5 -n load
 
