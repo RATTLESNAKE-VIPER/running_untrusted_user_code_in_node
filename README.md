@@ -1,4 +1,5 @@
-# Get detail article here 
+# excute main.sh file
+# Get detail article here
 https://medium.com/@deepak.r.poojari/running-users-untrusted-code-in-nodejs-930aadf936eb
 
 Running user untrusted code is sometimes challenging to run in NodeJs, as NodeJs runs on a single thread. This thread can be blocked by a user using a while loop in code or the process can be killed using process.exit in vm.
@@ -24,15 +25,15 @@ create 1000 tap interface with unique IP’s, start 1000 node process with that 
 
 There might be some microseconds downtime for process restart but Security can never be compromised.
 
-# Step 1:
+# Step 1: (createInterface.sh)
 create 1000 interface (repeat this 1000 times with unique ip and tapid)
 
-# Step 2:
+# Step 2: (keepLiveNodeApp.sh)
 Run node process with IP provided as process arguments.
 node nodeapp.js “IP” (IP should be same as tap IP)
 This process will restart after every user code execution.
 
-# Step 3:
+# Step 3: (loadBalancer.js)
 Run loadbalancer.js
 loadbalancer.js will be that main process that will be responsible for routing the external requests to nodeapp.js process.
 
