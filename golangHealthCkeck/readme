@@ -1,0 +1,7 @@
+# setting port in env
+export PORT=8000
+then go run main.go 
+
+
+# downloads
+go get github.com/gorilla/mux    ( mux to route requests )
